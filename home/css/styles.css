@@ -1,4 +1,5 @@
 .panel {
+  position: fixed;
   height: 100vh;
   width: 100%;
   display: block;
@@ -11,6 +12,18 @@
 .centered-text{
     color: white;
     text-align: center;
+}
+
+.slide{
+  position: relative;
+  width: 75%;
+  margin: 50vh auto 2rem; /* top margin = 50% viewport height, center horizontally, 2rem bottom */
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
 }
 
 body {
