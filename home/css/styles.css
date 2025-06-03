@@ -14,6 +14,33 @@
     text-align: center;
 }
 
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-family: "Liberation Mono", monospace;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 .slide{
   position: absolute;
   top: 50%;
@@ -31,7 +58,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
     font-family: "Liberation Mono", monospace;
 
     background: black;
