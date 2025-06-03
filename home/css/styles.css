@@ -9,7 +9,8 @@
 }
 
 .centered-text{
-    style="text-align: center"
+    color: white;
+    text-align: center;
 }
 
 body {
@@ -18,5 +19,4 @@ body {
     font-family: "Liberation Mono", monospace;
 
     background: black;
-    color: white;
 }
