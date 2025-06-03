@@ -3,3 +3,7 @@
   display: block;
   opacity: 0.8; /* 80% opacity */
 }
+
+.centered-text{
+    style="text-align: center"
+}
