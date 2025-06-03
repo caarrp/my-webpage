@@ -25,6 +25,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* allows wrapping on smaller screens */
+  top: 65%;
+  left: 50%;
+  right: 50%;
   width: 75%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
