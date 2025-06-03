@@ -12,14 +12,10 @@
 .centered-text{
     color: white;
     text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
 }
 
-
-.navbar-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
 
 .navbar {
   display: flex;
