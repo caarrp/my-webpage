@@ -23,7 +23,7 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  top: 65%;
+  
   left: 50%;
   right: 50%;
   width: 75%;
