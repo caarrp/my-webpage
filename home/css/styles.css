@@ -16,14 +16,16 @@
 
 .slide{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 75%;
-  margin: 50vh auto 2rem; /* top margin = 50% viewport height, center horizontally, 2rem bottom */
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-
+  text-align: center;
 }
 
 body {
