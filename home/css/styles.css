@@ -1,5 +1,5 @@
 .panel {
-  position: fixed;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: block;
@@ -15,7 +15,7 @@
 }
 
 .slide{
-  position: relative;
+  position: absolute;
   width: 75%;
   margin: 50vh auto 2rem; /* top margin = 50% viewport height, center horizontally, 2rem bottom */
   padding: 2rem;
