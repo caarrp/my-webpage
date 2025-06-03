@@ -22,11 +22,8 @@
 .navbar {
   display: flex;
 
-  justify-content: space-around;
-  
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+
 
   width: 75%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -41,6 +38,9 @@
   color: rgb(236, 232, 232);
   text-decoration: none;
   margin: 0 1rem;
+
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent box */
+  border: 1px solid rgba(255, 255, 255, 0.173); /* subtle border */
   font-family: "Liberation Mono", monospace;
   padding: 0.5rem 1rem;
   border-radius: 5px;
