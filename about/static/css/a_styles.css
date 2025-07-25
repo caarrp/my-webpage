@@ -50,32 +50,3 @@
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
-
-.navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-
-.slide{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.01);
-  text-align: center;
-  z-index: 10;
-}
-
-body {
-    margin: 0;
-    padding-top: 70px;
-    font-family: "Liberation Mono", monospace;
-
-    background: black;
-}
