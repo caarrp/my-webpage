@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: "Liberation Mono", monospace;
+
+    background: black;
+}
+
 .panel {
   background-size: cover;
 
@@ -21,9 +29,7 @@
 
 .navbar {
   display: flex;
-
   justify-content: center;
-
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
