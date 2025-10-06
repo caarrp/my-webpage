@@ -1,2 +1,2 @@
 # my-webpage
-aparently it was this easy the whole time. you can find my webpage here https://caarrp.github.io/carmen_park/home
+welp this is embarrasing and not my website yet. hmm.
