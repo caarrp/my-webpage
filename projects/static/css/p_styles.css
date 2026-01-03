@@ -19,6 +19,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.slide {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: auto;
+}
+
 .centered-text{
     color: white;
     text-align: center;
