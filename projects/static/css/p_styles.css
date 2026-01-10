@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-top: 70px;
     font-family: "Liberation Mono", monospace;
-
+    color: white;
     background: black;
 }
 
@@ -38,10 +38,10 @@ body {
 
 
 .navbar {
-  display: block;
-
+  display: flex;
   justify-content: center;
-
+  align-items: center; /* vertically center items */
+  flex-wrap: nowrap;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
@@ -67,4 +67,24 @@ body {
 .navbar a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+
+.box-tab {
+  display: block; /*it's a block element */
+  text-decoration: none
+
+}
+
+.box-tab strong {
+  display: block; /* Force strong to its own line */
+
+}
+
+.box-tab .box-content {
+  display: block; /* Ensure span is also block-level */
+  font-size: 0.875em;
+  margin-top: 0.5em;
+  color: white
+
 }
