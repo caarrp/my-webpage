@@ -1,2 +1,2 @@
 # my-webpage
-welp this is embarrasing and not my website yet. hmm.
+This is a temporary website as I am trying to get off github!
