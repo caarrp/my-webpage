@@ -88,3 +88,11 @@ body {
   color: white
 
 }
+
+.project-box {
+  margin: 1.25rem 0;          
+  border: 1px solid #181717;     
+  border-radius: 6px;         
+  background-color: #0000009d;  
+  
+}
