@@ -37,7 +37,7 @@
         </header>
 
       <!-- first photo ---> 
-        <div class="photo-container">
+        <div class="image-container">
             <img src="../images/png/p9.png" 
                  alt="Final render from my ray tracer showing reflections and shadows" 
                  class="featured-image">
@@ -74,38 +74,48 @@
                     Parallel projection most likely will be the easiest of these tasks. This would entail adjusting the rays of the camera to hit ortogonally within the scene rather 
                     than projecting out at an angle. This could have reprecussions with the camera's existing focal length and depth of field, and I am excited to see how it goes.
                 </p>
-                <p>
-                    Part of why I sought out this project and summer research was because I was interested in emulating a "fish eye lens" effect within a virtual space. Completing this 
-                    process could look like taking the existing linear rays and constructing a hemisphere or dome shaped projection if the camera angle is less than 180 degrees. As far 
-                    as I can tell, once you pass 180 degrees, your image becomes a construction of the light that is hitting you from every angle, and you are mapping anywhere up to a 
-                    full sphere of directions onto a flat surface. While both levels of distorion would require rethinking the coordinate basis that the project is built upon, I believe
-                    that focal angles within 180 degrees are a well defined problem that I can work with, where greater than 180 degrees can be more fundamentally problematic.
-                </p>
+
 
                 <div class="text-image-split">
                 <div class="text-content">
-                    <h3>Perspective vs Fisheye</h3>
-                    <p>The standard perspective projection (left) maintains straight lines but has a limited field of view. The fisheye projection (right) captures up to 180° but introduces characteristic barrel distortion.</p>
-                    <p>Notice how parallel lines remain straight in perspective but curve outward in fisheye views.</p>
+                <p>
+                    Part of why I sought out this and last summer's research project was because I was interested in emulating a "fish eye lens" effect within a virtual space. Completing this 
+                     could look like taking the existing linear rays and constructing a hemisphere or dome shaped projection if the camera angle is less than 180°. As far 
+                    as I can tell, once you pass 180°, your image becomes a construction of the light that is hitting you from every angle, and you are mapping anywhere up to a 
+                    full sphere of directions onto a flat surface. While both levels of distorion would require rethinking the coordinate basis that the project is built upon, I believe
+                    that focal angles within 180° are a well defined problem that I can work with, where as greater than 180° can be more fundamentally problematic.
+                </p>
+
+                <p>
+                    <a href="https://www.dgp.toronto.edu/public_user/stam/reality/Research/pdf/diff.pdf">"Diffraction Shaders"</a> by Jos Stam was an impactful paper that
+                    computed diffraction shaders in the modeling software MAYA.While not simulating full electromagnetic waves, it demonstrated that surface texture alone 
+                    can create diffraction-like effects. 
+                    For my ray tracer to achieve similar results, I'd need to extend it beyond smooth surfaces to account for microscopic roughness and wavelength-dependent 
+                    scattering—treating surfaces not as perfect mirrors but as complex optical elements. 
+                </p>
+            
+
+                    <p> </p>
                 </div>
                 <div class="image-stack">
                     <figure>
-                        <img src="../images/png/p5.png" alt="Perspective view" class="stacked-image">
-                        <figcaption>90° Perspective</figcaption>
+                        <img src="../images/png/p7.png" alt="process image 1" class="stacked-image">
+                        <figcaption>process 2</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/png/p6.png" alt="Fisheye view" class="stacked-image">
-                        <figcaption>180° Fisheye</figcaption>
+                        <img src="../images/png/p6.png" alt="process image 2" class="stacked-image">
+                        <figcaption>process 1</figcaption>
                     </figure>
                 </div>
             </div>
-                <p>
 
-                </p>
-            
-            <h2>Why Build a Ray Tracer?</h2> 
-            <p>Most 3D graphics today use rasterization, which projects 3D objects onto a 2D screen. While fast, rasterization struggles with realistic lighting effects. Ray tracing, in contrast, simulates the physical behavior of light, creating stunningly realistic images with accurate shadows, reflections, and refractions.</p>
-            
+                    <h3>Process Photos</h3>
+                    <p>These are some process images, where I was 
+                        experimenting with a diffuse light object's intensity, 
+                        location, and antialiasing. I will also link my <a href="https://github.com/caarrp/ray-tracer-cpp">github repo</a> here. 
+                        
+                    </p>
+
         
     </div>
 

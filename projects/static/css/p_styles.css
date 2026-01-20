@@ -121,6 +121,12 @@ a:hover {
     flex: 1;
 }
 
+.image-container {
+    width: 100%; /* Takes full width of its parent */
+    margin: 40px 0; /* Vertical spacing */
+}
+
+
 .image-stack {
     flex: 1;
     display: flex;
