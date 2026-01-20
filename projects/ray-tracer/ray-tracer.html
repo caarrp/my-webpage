@@ -45,10 +45,65 @@
         </div>
 
         <article class="post-content">
-            <p>Ray tracing has always fascinated me as the
-                 holy grail of computer graphics. While modern GPUs now offer hardware-accelerated ray tracing, I wanted to understand the fundamentals by building my own from scratch. This project took me three months of weekends and late nights, but the results were worth it.</p>
+            <p>In the spring I learned C++ and 
+                in the summer I started writing a raytracer. I used tutorials like <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">"Raytracing in a weekend"</a>, 
+                by Peter Shirley, and <a href="https://pbr-book.org/">"Physically Based Rendering: From Theory to Implementation"</a> by Pharr Humphreys.
+                This was an independent project that I worked on while learning more about geometric optics and wave optics with Jason Murphy. 
+                </p>
+                <p>
+                    This project exposed me to computer graphics for the first time. It was also a helpful primer to understand how real world lighting can be
+                    aproximated computationally, how this affects accuracy, and ultimately the time it takes to render an image. I really enjoyed the process of building everything 
+                    from a vector in 3D space. The Vec3 class described color, direction and origin of rays, radiis of spheres etc. I hope to add more hittable shapes
+                    to this implementation, and would be curious to see how a Matrix class could distill and encapsulate what I have so far. 
+                    I also enjoyed understanding that each ray shot out from the camera follows a path; when it hits a given object, that object's material property 
+                    describes how much it disperses, reflects or refracts. In the process, rays deposit color along their path, which recursively attribute to each pixel
+                    in a final image.  
+                </p>
+                <p>
+                    I also found that antialiasing and gamma correction were two incredibly important concepts that I enjoyed learning about. The antialiasing process of "softening" rough pixel 
+                    edges makes perfect sense, and while my implementation covered the basics I could see how more adept sampling techniques could be useful. Also, realizing that
+                    gamma correction takes what the computer's "camera" senses, and translates the signals into something more readable to the human eye was a fascinating discovery. 
+                    It helped me consider how the levels of information that the computer sees vs what the human eye actually perceives are vastly different, and wonder what other color
+                    spaces are possible to access with nonlinear transformations.
+                </p>
+                <p> 
+                    Some things that I will find time to keep working on would be to add a parallel projection option, add ray transformations for wider than 90 degree rays, or to 
+                    account for a stereographic lens effect, and to look into how to instantiate diffractional lighting effects. 
+                </p>
+                <p>
+                    Parallel projection most likely will be the easiest of these tasks. This would entail adjusting the rays of the camera to hit ortogonally within the scene rather 
+                    than projecting out at an angle. This could have reprecussions with the camera's existing focal length and depth of field, and I am excited to see how it goes.
+                </p>
+                <p>
+                    Part of why I sought out this project and summer research was because I was interested in emulating a "fish eye lens" effect within a virtual space. Completing this 
+                    process could look like taking the existing linear rays and constructing a hemisphere or dome shaped projection if the camera angle is less than 180 degrees. As far 
+                    as I can tell, once you pass 180 degrees, your image becomes a construction of the light that is hitting you from every angle, and you are mapping anywhere up to a 
+                    full sphere of directions onto a flat surface. While both levels of distorion would require rethinking the coordinate basis that the project is built upon, I believe
+                    that focal angles within 180 degrees are a well defined problem that I can work with, where greater than 180 degrees can be more fundamentally problematic.
+                </p>
+
+                <div class="text-image-split">
+                <div class="text-content">
+                    <h3>Perspective vs Fisheye</h3>
+                    <p>The standard perspective projection (left) maintains straight lines but has a limited field of view. The fisheye projection (right) captures up to 180° but introduces characteristic barrel distortion.</p>
+                    <p>Notice how parallel lines remain straight in perspective but curve outward in fisheye views.</p>
+                </div>
+                <div class="image-stack">
+                    <figure>
+                        <img src="../images/png/p5.png" alt="Perspective view" class="stacked-image">
+                        <figcaption>90° Perspective</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/png/p6.png" alt="Fisheye view" class="stacked-image">
+                        <figcaption>180° Fisheye</figcaption>
+                    </figure>
+                </div>
+            </div>
+                <p>
+
+                </p>
             
-            <h2>Why Build a Ray Tracer?</h2>
+            <h2>Why Build a Ray Tracer?</h2> 
             <p>Most 3D graphics today use rasterization, which projects 3D objects onto a 2D screen. While fast, rasterization struggles with realistic lighting effects. Ray tracing, in contrast, simulates the physical behavior of light, creating stunningly realistic images with accurate shadows, reflections, and refractions.</p>
             
         
